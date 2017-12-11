@@ -1,0 +1,35 @@
+<h1>Secure Web Page</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="#/login">Click here to go back to landing page</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <pre>
+             <b>Authorization code call repsonse : </b>  {{authData | json}}
+            </pre>
+                        <pre>
+             <b>Access Token call response: </b>  {{accessToken | json}}
+            </pre>
+
+                        <pre>
+             <b>ID Token decoded : </b>  {{decodedToken | json}}
+            </pre>
+
+                        <pre>
+             <b>User Info Endpoint response: </b>  {{userInfo | json}}
+            </pre>
+
+                        <pre>
+             <b>Token Info Endpoint response: </b>  {{tokenInfo | json}}
+            </pre>
+
+        </div>
+
+    </div>
+
+
+</div>
+
