@@ -20,6 +20,11 @@
 
 
             window.localStorage.setItem("authData", JSON.stringify(authData));
+            window.localStorage.setItem("accessTokenData", null);
+            window.localStorage.setItem("AccessTokenRequest", null);
+            window.localStorage.setItem("TokenInfoRequest", null);
+            window.localStorage.setItem("UserInfoRequest", null);
+
             console.log("setting auth data:"+authData)
             window.location.href = apUrl+"/index.html#/dashboard";
         } else {
